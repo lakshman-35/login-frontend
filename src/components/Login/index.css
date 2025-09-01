@@ -1,0 +1,128 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.login-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background: #f9f9f9;
+}
+
+.input-group .icon {
+  margin-right: 0.5rem;
+  color: #6e8efb;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.btn {
+  background: #6e8efb;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #5a7be0;
+}
+
+.footer-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-text a {
+  color: #6e8efb;
+  font-weight: bold;
+  text-decoration: none;
+}
+.error-text {
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.link {
+  color: #6e8efb;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.success-text {
+  color: green;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.error-text {
+  color: red;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.popup {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  min-width: 220px;
+  padding: 16px 32px 16px 16px;
+  border-radius: 8px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: fadeIn 0.3s;
+}
+.popup.success { background: #4BB543; }
+.popup.error { background: #E74C3C; }
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
