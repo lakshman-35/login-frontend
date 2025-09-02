@@ -25,7 +25,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const res = await axios.post("http://localhost:5000/auth/login", { email, password });
       setMessage(res.data.message);
       setIsSuccess(true);
       setShowPopup(true);
